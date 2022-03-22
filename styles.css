@@ -88,29 +88,46 @@ h1 {
     padding: 0 18px;
 }
 
-.h2-black {
+.h2-black, .h2-white {
     font-family: "Amsdam Regular", serif;
     font-size: 20px;
-    color: #3e3d3d;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    font-weight: normal;
 }
 
-.h2-black::after {
+.h2-black {
+    color: #3e3d3d;
+}
+
+.h2-white {
+    color: #ffffff;
+}
+
+.h2-black::after, .h2-white::after {
     content: "";
     display: block;
-    margin: 27px auto 0;
-    background-image: url("img/wavy-line-black.png");
+    margin: 27px auto 40px;
     background-repeat: no-repeat;
     height: 5px;
     width: 186px;
+}
+
+.h2-black::after {
+    background-image: url("img/wavy-line-black.png");
+}
+
+.h2-white::after {
+    background-image: url("img/wavy-line-white.png");
 }
 
 .normal-text {
     font-family: "Crimson Roman", serif;
     font-size: 14px;
     color: #3e3d3d;
+    letter-spacing: 1.4px;
+    line-height: 25px;
 }
 
 .content-container {
@@ -290,9 +307,12 @@ h1 {
         top: -8px;
     }
 
+.main-content {
+    background-color: #e3e3e3;
+}
+
 .about-us-container {
     padding-top: 73px;
-    background-color: #e3e3e3;
 }
 
     .about-us-container .content-container {
@@ -307,9 +327,7 @@ h1 {
 
         .about-us span {
             display: block;
-            padding: 43px 0 50px;
-            line-height: 25px;
-            letter-spacing: 1.4px;
+            margin-bottom: 50px;
         }
 
         .about-us-buttons {
@@ -350,4 +368,77 @@ h1 {
 
         .stat-counter {
             font-size: 45px;
+        }
+
+.services-container {
+    background-image: url("img/services-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 742px;*/
+    text-align: center;
+}
+
+    .services-container h2 {
+        padding-top: 70px;
+    }
+
+    .services-container span {
+        color: #cfcfcf;
+    }
+
+    .services-descriptions {
+        padding: 80px 0 85px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .service-item {
+            padding: 35px 30px 45px;
+            max-width: 270px;
+            border-bottom: 2px solid #898989;
+            border-left: 2px solid #898989;
+            border-right: 2px solid #898989;
+            box-sizing: border-box;
+        }
+
+        .service-icon {
+            position: relative;
+        }
+
+        .service-icon::before, .service-icon::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 50%;
+            top: -35px;
+            background-color: #898989;
+        }
+
+        .service-icon::before {
+            left: -30px;
+        }
+
+        .service-icon::after {
+            right: -30px
+        }
+
+        .service-icon img {
+            position: absolute;
+            top: -47px;
+            left: 50%;
+            margin-left: -13px;
+        }
+
+        .service-item h3 {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: "Montserrat Regular", sans-serif;
+            font-weight: bold;
+            color: #bebebf;
+            line-height: 18px;
+            position: relative;
+        }
+
+        .service-item span {
+            color: #d8d8d8;
         }
