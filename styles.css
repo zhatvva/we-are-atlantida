@@ -80,7 +80,7 @@ body, html {
 
 h1 {
     text-transform: uppercase;
-    font-family: "Amsdam Regular";
+    font-family: "Amsdam Regular", serif;
     color: white;
     font-size: 36px;
     font-weight: normal;
@@ -88,9 +88,29 @@ h1 {
     padding: 0 18px;
 }
 
+.h2-black {
+    font-family: "Amsdam Regular", serif;
+    font-size: 20px;
+    color: #3e3d3d;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.h2-black::after {
+    content: "";
+    display: block;
+    margin: 27px auto 0;
+    background-image: url("img/wavy-line-black.png");
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 186px;
+}
+
 .normal-text {
-    font-family: "Crimson Roman";
+    font-family: "Crimson Roman", serif;
     font-size: 14px;
+    color: #3e3d3d;
 }
 
 .content-container {
@@ -270,6 +290,64 @@ h1 {
         top: -8px;
     }
 
-.main-info {
+.about-us-container {
+    padding-top: 73px;
     background-color: #e3e3e3;
 }
+
+    .about-us-container .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us {
+        padding: 60px 70px 50px;
+        background-color: #ffffff;
+    }
+
+        .about-us span {
+            display: block;
+            padding: 43px 0 50px;
+            line-height: 25px;
+            letter-spacing: 1.4px;
+        }
+
+        .about-us-buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-us-buttons button {
+            text-transform: capitalize;
+            width: 134px;
+            height: 39px;
+            margin: 0 4px;
+        }
+
+    .about-us-stats {
+        display: flex;
+        justify-content: center;
+        padding: 36px 0 63px;
+    }
+
+        .stat-element {
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Montserrat Regular", sans-serif;
+            font-weight: bold;
+            color: #3e3d3d;
+        }
+
+        .stat-name {
+            font-size: 13px;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 18px;
+        }
+
+        .stat-counter {
+            font-size: 45px;
+        }
