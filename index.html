@@ -8,18 +8,19 @@
   <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
 </head>
 <body>
-<header>
+<header class="main-header">
 
-  <div id="navigation-bar">
+  <div class="navigation-bar">
     <div class="content-container">
-      <img id="logo-image" src="img/Icon%20Logo.png" alt="Atlantida logo">
-      <a id="logo-name" href="#">atlantida</a>
-<!--      TODO сделать ссылку на картинку лого тоже-->
+      <a class="logo-name" href="#">
+        <img class="logo-image" src="img/Icon%20Logo.png" alt="Atlantida logo">
+        atlantida
+      </a>
       <nav>
         <ul>
           <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
+          <li><a href="#about-us">about</a></li>
+          <li><a href="#services">services</a></li>
           <li><a href="#">history</a></li>
           <li><a href="#">team</a></li>
           <li><a href="#">portfolio</a></li>
@@ -28,30 +29,118 @@
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
-      <div id="nav-social-networks">
-        <i class="fa-brands fa-facebook-square fa-2xs"></i>
+      <div class="nav-social-networks">
+        <a class="fa-brands fa-facebook-square fa-2xs" href="https://facebook.com" target="_blank"></a>
         <div class="vertical-line"></div>
-        <i class="fa-brands fa-twitter fa-2xs"></i>
+        <a class="fa-brands fa-twitter fa-2xs" href="https://twitter.com" target="_blank"></a>
         <div class="vertical-line"></div>
-        <i class="fa-brands fa-behance fa-2xs"></i>
+        <a class="fa-brands fa-behance fa-2xs" href="https://behance.net" target="_blank"></a>
       </div>
     </div>
   </div>
 
-  <div id="slider">
+  <div class="slider">
     <div class="content-container">
-      <button id="slider-left" class="slide-button"></button>
-      <div id="slider-center">
+      <button class="slider-left slide-button"></button>
+      <div>
         <span class="normal-text">Design Studio and Digital Agency</span>
-        <div id="slider-header">
+        <div class="slider-header">
           <h1>we are atlantida</h1>
         </div>
-        <button class="button-class" style="height: 86px; width: 154px; margin-top: 44px;"></button>
+        <button class="button-class slider-button">Get Started</button>
+        <img src="img/get-started-arrow.png" alt="" class="slider-button-arrow">
       </div>
-      <button id="slider-right" class="slide-button"></button>
+      <button class="slider-right slide-button"></button>
     </div>
   </div>
 
 </header>
+<main class="main-content">
+
+  <div class="about-us-container" id="about-us">
+    <div class="content-container">
+      <img src="img/about-us-bg.png" alt="">
+      <div class="about-us">
+        <h2 class="h2-black">about us</h2>
+        <span class="normal-text">Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. Maecenas est enim, sollicitudin sit amet nisi vel, mattis efficitur sapien. Nulla lobortis dui in aliquam placerat. Maecenas commodo odio nec neque imperdiet sagittis. Fusce mauris tellus, vulputate id finibus a, rutrum et justo. Vivamus at eros sed justo laoreet mattis vulputate vel magna. Sed quis pulvinar quam, et tempus purus. Fusce et nisi eget dui hendrerit iaculis. Cras volutpat augue tempor viverra tincidunt. Maecenas interdum scelerisque enim. Aenean interdum leo ac lectus gravida, id tincidunt sem finibus. Curabitur ac arcu blandit, tempus leo id, ultrices ante. </span>
+        <div class="about-us-buttons">
+          <button class="button-class">contact us</button>
+          <button class="button-class">portfolio</button>
+        </div>
+      </div>
+      <div class="about-us-stats">
+        <div class="stat-element">
+          <img src="img/stat-awards-winner.png" alt="" class="stat-image">
+          <div class="stat-name">awards<br>winner</div>
+          <div class="stat-counter">54</div>
+        </div>
+        <img src="img/stat-divider.png" alt="">
+        <div class="stat-element">
+          <img src="img/stat-jobs-done.png" alt="" class="stat-image">
+          <div class="stat-name">jobs<br>done</div>
+          <div class="stat-counter">1054</div>
+        </div>
+        <img src="img/stat-divider.png" alt="">
+        <div class="stat-element">
+          <img src="img/stat-happy-clients.png" alt="" class="stat-image">
+          <div class="stat-name">happy<br>clients</div>
+          <div class="stat-counter">120</div>
+        </div>
+        <img src="img/stat-divider.png" alt="">
+        <div class="stat-element">
+          <img src="img/stat-reviews-received.png" alt="" class="stat-image">
+          <div class="stat-name">reviews<br>received</div>
+          <div class="stat-counter">120</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-container" id="services">
+    <div class="content-container">
+      <h2 class="h2-white">services</h2>
+      <span class="normal-text">Donec aliquet, ipsum ut lobortis facilisis, nisi ligula aliquam odio, ut vehicula odio lorem in erat. Quisque quam ipsum, commodo non condimentum a, fermentum id sapien. Pellentesque sit amet sem neque. </span>
+      <div class="services-descriptions">
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="img/services-idea.png" alt="bulb-image">
+          </div>
+          <h3>graphic<br>design</h3>
+          <span class="normal-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="img/services-monitor.png" alt="bulb-image">
+          </div>
+          <h3>website<br>design</h3>
+          <span class="normal-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="img/services-combo-chart.png" alt="bulb-image">
+          </div>
+          <h3>seo &<br>analytics</h3>
+          <span class="normal-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">
+            <img src="img/services-wordpress.png" alt="bulb-image">
+          </div>
+          <h3>wordpress<br>programming</h3>
+          <span class="normal-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
 </body>
 </html>
