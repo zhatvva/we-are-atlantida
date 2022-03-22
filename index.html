@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
 </head>
 <body>
-<header>
+<header class="main-header">
 
-  <div id="navigation-bar">
+  <div class="navigation-bar">
     <div class="content-container">
-      <img id="logo-image" src="img/Icon%20Logo.png" alt="Atlantida logo">
-      <a id="logo-name" href="#">atlantida</a>
-<!--      TODO сделать ссылку на картинку лого тоже-->
+      <a class="logo-name" href="#">
+        <img class="logo-image" src="img/Icon%20Logo.png" alt="Atlantida logo">
+        atlantida
+      </a>
       <nav>
         <ul>
           <li><a href="#">home</a></li>
@@ -28,30 +29,34 @@
           <li><a href="#">contact</a></li>
         </ul>
       </nav>
-      <div id="nav-social-networks">
-        <i class="fa-brands fa-facebook-square fa-2xs"></i>
+      <div class="nav-social-networks">
+        <a class="fa-brands fa-facebook-square fa-2xs" href="https://facebook.com" target="_blank"></a>
         <div class="vertical-line"></div>
-        <i class="fa-brands fa-twitter fa-2xs"></i>
+        <a class="fa-brands fa-twitter fa-2xs" href="https://twitter.com" target="_blank"></a>
         <div class="vertical-line"></div>
-        <i class="fa-brands fa-behance fa-2xs"></i>
+        <a class="fa-brands fa-behance fa-2xs" href="https://behance.net" target="_blank"></a>
       </div>
     </div>
   </div>
 
-  <div id="slider">
+  <div class="slider">
     <div class="content-container">
-      <button id="slider-left" class="slide-button"></button>
-      <div id="slider-center">
+      <button class="slider-left slide-button"></button>
+      <div>
         <span class="normal-text">Design Studio and Digital Agency</span>
-        <div id="slider-header">
+        <div class="slider-header">
           <h1>we are atlantida</h1>
         </div>
-        <button class="button-class" style="height: 86px; width: 154px; margin-top: 44px;"></button>
+        <button class="button-class slider-button">Get Started</button>
+        <img src="img/get-started-arrow.png" alt="" class="slider-button-arrow">
       </div>
-      <button id="slider-right" class="slide-button"></button>
+      <button class="slider-right slide-button"></button>
     </div>
   </div>
 
 </header>
+<main class="main-info">
+
+</main>
 </body>
 </html>

@@ -76,16 +76,16 @@
 
 body, html {
     margin: 0;
-    padding: 0;
-    font-family: "Montserrat";  /* Конченый шрифт */
-    color: #757575;
 }
 
-header {
-    background-image: url("img/Slider main.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 698px;
+h1 {
+    text-transform: uppercase;
+    font-family: "Amsdam Regular";
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 0 18px;
 }
 
 .normal-text {
@@ -95,54 +95,78 @@ header {
 
 .content-container {
     max-width: 1200px;
-    /*TODO проверить реально ли там 1200px или всё-таки 1230px*/
+
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 .button-class {
+    border: 2px solid #3e3d3d;
     background-color: transparent;
-    height: 39px;
-    width: 134px;
+    color: #3e3d3d;
     cursor: pointer;
+    font-family: "Montserrat Regular", sans-serif;
 }
 
-#navigation-bar {
+.button-class:hover {
+    background-color: #3e3d3d;
+    color: #cecece;
+}
+
+.main-header {
+    background-image: url("img/Slider main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 698px;
+}
+
+.navigation-bar {
     background-color: #FFFFFF;
     text-transform: uppercase;
+    font-family: "Montserrat Regular", sans-serif;
+    color: #757575;
 }
 
-    #navigation-bar .content-container {
+    .navigation-bar .content-container {
         height: 63px;
         display: flex;
         align-items: center;
     }
 
-    #logo-name {
+    .logo-name {
         text-decoration: none;
         font-weight: bold;
         color: #757575;
+        display: inherit;
+        align-items: inherit;
     }
 
-    #logo-image {
+    .logo-image {
         margin-right: 12px;
     }
 
-    #navigation-bar ul {
+    .navigation-bar ul {
         font-size: 12px;
         display: flex;
         justify-content: space-between;
         list-style-type: none;
         width: 580px;
+        padding-left: 0;
     }
 
-    #nav-social-networks {
+    .nav-social-networks {
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: #757575;
     }
+
+        .nav-social-networks a {
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
 
     .vertical-line {
         border-left: 2px solid #757575;
@@ -151,24 +175,41 @@ header {
         display: inline-block;;
     }
 
-    nav {
+    .navigation-bar nav {
         margin-left: 107px;
         flex-grow: 1;
         color: #aaaaaa;
     }
 
-        nav a {
+        .navigation-bar nav a {
             color: inherit;
             text-decoration: none;
+            position: relative;
         }
 
-#slider {
+        .navigation-bar nav a::after {
+            display: block;
+            height: 2px;
+            background-color: #757575;
+            transition: width 0.2s;
+            position: absolute;
+            left: 0;
+            width: 0;
+            content: "";
+        }
+
+        .navigation-bar nav a:hover::after,
+        a:focus::after {
+            width: 100%;
+        }
+
+.slider {
     display: flex;
     align-items: center;
     margin-top: 198px;
 }
 
-    #slider .content-container {
+    .slider .content-container {
         text-align: center;
         display: flex;
         flex-grow: 1;
@@ -176,7 +217,7 @@ header {
         align-items: center;
     }
 
-    #slider-header {
+    .slider-header {
         display: flex;
         align-items: center;
         background-image: url("img/wavy-lines.png");
@@ -184,20 +225,9 @@ header {
         margin-top: 24px;
     }
 
-    #slider h1 {
-        text-transform: uppercase;
-        font-family: "Amsdam Regular";
-        color: white;
-        font-size: 36px;
-        font-weight: normal;
-        letter-spacing: 5px;
-    }
-
-    #slider .normal-text {
+    .slider .normal-text {
         color: white;
         letter-spacing: 1px;
-        /*display: block;
-        text-align: center;*/
     }
 
     .slide-button {
@@ -208,12 +238,38 @@ header {
         width: 34px;
     }
 
-    #slider-left {
+    .slider-left {
         background-image: url("img/slider-button-left.png");
         cursor: pointer;
     }
 
-    #slider-right {
+    .slider-right {
         background-image: url("img/slider-button-right.png");
         cursor: pointer;
     }
+
+    .slider-button {
+        height: 39px;
+        width: 134px;
+
+        display: block;
+        margin: 44px auto 0;
+
+        font-size: 15px;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+
+    .slider-button:hover {
+        background-color: #3e3d3d;
+        color: #ffffff;
+    }
+
+    .slider-button-arrow {
+        position: relative;
+        top: -8px;
+    }
+
+.main-info {
+    background-color: #e3e3e3;
+}
