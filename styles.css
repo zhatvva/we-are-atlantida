@@ -415,11 +415,11 @@ h1 {
         }
 
         .service-icon::before {
-            left: -30px;
+            left: -31px;
         }
 
         .service-icon::after {
-            right: -30px
+            right: -31px
         }
 
         .service-icon img {
