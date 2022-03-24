@@ -1,3 +1,4 @@
+
 /* montserrat-regular - latin_cyrillic */
 @font-face {
     font-family: 'Montserrat';
@@ -72,10 +73,6 @@
 @font-face {
     font-family: "Crimson Roman";
     src: url("fonts/crimson-roman/crimson-roman.otf") format("opentype");
-}
-
-body, html {
-    margin: 0;
 }
 
 h1 {
@@ -442,3 +439,181 @@ h1 {
         .service-item span {
             color: #d8d8d8;
         }
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1600px;
+    font-family: "Montserrat";  /* Конченый шрифт */
+    color: #757575;
+}
+
+.map_img{
+    width: 100%;
+    height: 512px;
+}
+
+footer {
+    background-color: rgb(42, 42, 42);/*url("https://img.freepik.com/free-photo/dark-fabric-seamless-texture-for-background_272991-59.jpg");*/
+    height: 640px;
+
+}
+
+.flex_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    margin-left: 215px;
+    margin-right: 215px;
+
+}
+
+.flex_footer .sub_flex_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height : 100%;
+    width: 370px;
+}
+
+.flex_footer div{
+    color: rgb(200, 200, 200);
+}
+
+div form input{
+    border: rgb(137, 137, 137) solid 2px;
+    color: rgb(137, 137, 137);
+    background: none;
+    width: 324px;
+    margin: 12px 15px;
+    padding: 23px 22px;
+}
+
+div form textarea{
+    border: rgb(137, 137, 137) solid 2px;
+    color: rgb(137, 137, 137);
+    background: none;
+    margin: 12px 15px;
+    width: 737px;
+    height: 95px;
+    padding: 23px 22px;
+    resize: none;
+}
+div form button{
+    margin-left: 15px;
+    width: 135px;
+    height: 40px;
+    background: rgb(70, 70, 70);
+    color: white;
+    border: none;
+}
+div form button:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+footer hr{
+    border: rgb(62, 62, 62) solid 1px;
+    margin-right: 215px;
+    margin-left: 215px;
+}
+footer p{
+    margin-right: 215px;
+    margin-left: 215px;
+    color: rgb(137, 137, 137);
+}
+
+#gray70text{
+    color: rgb(70, 70, 70);
+    margin-top: -15px;
+}
+footer div .white_text{
+    color: white;
+    margin: 0;
+}
+#gray137text{
+    color: rgb(137, 137, 137);
+
+}
+
+
+footer .logo_h2{
+    display: flex;
+    flex-direction: row;
+}
+footer .logo_h2 img{
+    margin-top: -3px;
+    width : 40px;
+    height: 30px;
+}
+.footer_logo{
+    margin-right: 12px;
+}
+
+.flex_statement{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: aquamarine;
+    /*background-image: ...*/
+    width: 100%;
+    height: 520px;
+}
+#state_avatar img{
+    margin-top: 75px;
+    margin-bottom: 60px;
+}
+#state_author{
+    margin-top: 75px;
+    margin-bottom: 22px;
+}
+
+#multidots{
+    margin-top: 50px;
+}
+.flex_clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 285px 1px 285px;
+    margin: 0 0 0 0;
+    word-wrap: normal;
+
+    background: rgb(240, 240, 240);
+    /*background-image: */
+    height: 525px;
+}
+
+.flex_clients div h2{
+    font-weight: 200;
+    margin: 0 0 0 0;
+
+}
+.flex_clients hr{
+    width: 170px;
+    /*толщина + wave */
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+#client_main_text{
+    margin: 45px 25px 80px 25px;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+#img_flex_array{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#img_flex_array img{
+    height: 120px;
+    width: 120px;
+
+}
+
