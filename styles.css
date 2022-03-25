@@ -78,10 +78,10 @@
 h1 {
     text-transform: uppercase;
     font-family: "Amsdam Regular", serif;
-    color: white;
-    font-size: 36px;
+    color: #ffffff;
+    font-size: 35.7px;
     font-weight: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.1em;
     padding: 0 18px;
 }
 
@@ -123,7 +123,7 @@ h1 {
     font-family: "Crimson Roman", serif;
     font-size: 14px;
     color: #3e3d3d;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.1em;
     line-height: 25px;
 }
 
@@ -140,6 +140,7 @@ h1 {
     background-color: transparent;
     color: #3e3d3d;
     cursor: pointer;
+    letter-spacing: 0.1em;
     font-family: "Montserrat Regular", sans-serif;
 }
 
@@ -174,6 +175,8 @@ h1 {
         color: #757575;
         display: inherit;
         align-items: inherit;
+        letter-spacing: 0.1em;
+        font-size: 18px;
     }
 
     .logo-image {
@@ -191,7 +194,6 @@ h1 {
 
     .nav-social-networks {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         color: #757575;
     }
@@ -216,9 +218,10 @@ h1 {
     }
 
         .navigation-bar nav a {
-            color: inherit;
             text-decoration: none;
             position: relative;
+            font-size: 12px;
+            color: #aaaaaa;
         }
 
         .navigation-bar nav a::after {
@@ -261,7 +264,6 @@ h1 {
 
     .slider .normal-text {
         color: white;
-        letter-spacing: 1px;
     }
 
     .slide-button {
@@ -283,14 +285,14 @@ h1 {
     }
 
     .slider-button {
-        height: 39px;
-        width: 134px;
+        height: 44px;
+        width: 153px;
 
         display: block;
         margin: 44px auto 0;
 
         font-size: 15px;
-        border-color: #ffffff;
+        border-color: #f2f2f2;
         color: #ffffff;
     }
 
@@ -371,7 +373,6 @@ h1 {
     background-image: url("img/services-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: 742px;*/
     text-align: center;
 }
 
@@ -381,6 +382,9 @@ h1 {
 
     .services-container span {
         color: #cfcfcf;
+        max-width: 1030px;
+        display: block;
+        margin: 0 auto;
     }
 
     .services-descriptions {
@@ -412,11 +416,11 @@ h1 {
         }
 
         .service-icon::before {
-            left: -30px;
+            left: -31px;
         }
 
         .service-icon::after {
-            right: -30px
+            right: -31px
         }
 
         .service-icon img {
@@ -439,6 +443,98 @@ h1 {
         .service-item span {
             color: #d8d8d8;
         }
+<<<<<<< HEAD
+
+.our-team-container {
+    background-image: url("img/our-team-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+    .our-team-container h2 {
+        padding-top: 70px;
+    }
+
+    .our-team-container span {
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
+
+    .our-team-members {
+        display: flex;
+        justify-content: space-between;
+        width: 872px;
+        margin: 0 auto;
+        padding: 60px 0 70px;
+    }
+
+        .our-team-members-item {
+            padding: 9px 7px;
+            box-sizing: border-box;
+            width: 271px;
+            height: 338px;
+        }
+
+        .our-team-members-item:nth-child(1) {
+            background-image: url("img/our-team-member-1.png");
+        }
+
+        .our-team-members-item:nth-child(2) {
+            background-image: url("img/our-team-member-2.png");
+        }
+
+        .our-team-members-item:nth-child(3) {
+            background-image: url("img/our-team-member-3.png");
+        }
+
+        .our-team-member-info {
+            display: none;
+            box-sizing: border-box;
+            height: 100%;
+            padding: 210px 91px 0 19px;
+            text-align: left;
+
+            background-image: url("img/our-team-white-bg.png");
+        }
+
+        .our-team-member-info h3 {
+            margin: 0;
+
+            font-family: "Montserrat Regular", sans-serif;
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: #3e3d3d;
+        }
+
+        .our-team-member-info span {
+            font-family: 'Crimson Roman', serif;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            font-style: italic;
+            color: #3e3d3d;
+        }
+
+        .our-team-member-info .nav-social-networks {
+            color: #3e3d3d;
+        }
+
+        .horizontal-line {
+            width: 146px;
+            height: 2px;
+            margin: 13px 0 18px;
+            background-color: #515151;
+        }
+
+        .our-team-members-item:hover .our-team-member-info {
+            display: block;
+        }
+=======
 body {
     margin: 0 auto;
     padding: 0;
@@ -663,3 +759,4 @@ footer .logo_h2 img{
     width: 150px;
 }
 
+>>>>>>> d2b323bd41fc86d469c60396257375f46f731d72
