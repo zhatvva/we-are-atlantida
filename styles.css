@@ -443,7 +443,7 @@ h1 {
         .service-item span {
             color: #d8d8d8;
         }
-<<<<<<< HEAD
+
 
 .our-team-container {
     background-image: url("img/our-team-bg.png");
@@ -534,7 +534,7 @@ h1 {
         .our-team-members-item:hover .our-team-member-info {
             display: block;
         }
-=======
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -758,5 +758,3 @@ footer .logo_h2 img{
     height: 120px;
     width: 150px;
 }
-
->>>>>>> d2b323bd41fc86d469c60396257375f46f731d72
