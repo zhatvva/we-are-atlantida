@@ -496,7 +496,7 @@ div form textarea{
     color: rgb(137, 137, 137);
     background: none;
     margin: 12px 15px;
-    width: 737px;
+    width: 731px;
     height: 95px;
     padding: 23px 22px;
     resize: none;
@@ -508,9 +508,12 @@ div form button{
     background: rgb(70, 70, 70);
     color: white;
     border: none;
+    font-weight: 600;
 }
 div form button:hover{
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(180, 180, 180);
+    color: black;
+
 }
 
 footer hr{
@@ -524,16 +527,25 @@ footer p{
     color: rgb(137, 137, 137);
 }
 
-#gray70text{
-    color: rgb(70, 70, 70);
+#gray136text{
+    color: rgb(136, 136, 136);
     margin-top: -15px;
+    font-family: "Crimson Roman";
 }
 footer div .white_text{
     color: white;
     margin: 0;
+
 }
 #gray137text{
     color: rgb(137, 137, 137);
+    font-family: "Crimson Roman";
+}
+
+.footer_copyright{
+    color: rgb(131, 131, 131);
+    font-family: "Crimson Roman", sans-serif;
+    font-style: italic;
 
 }
 
@@ -557,51 +569,86 @@ footer .logo_h2 img{
     flex-direction: column;
     align-items: center;
 
-    background-color: aquamarine;
-    /*background-image: ...*/
+    background-image: url("img/statement_back.png");
     width: 100%;
-    height: 520px;
+    height: 524px;
+    font-family: "Crimson Roman";
+    font-style: italic;
+    font-size: 20px;
 }
 #state_avatar img{
     margin-top: 75px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
+.state_quote{
+    font-family: "Crimson Roman";
+    font-style: italic;
+    font-size: 60px;
+}
+
 #state_author{
     margin-top: 75px;
     margin-bottom: 22px;
+    font-family: "Montserrat Regular", sans-serif;
+    font-style: normal;
+}
+
+#Free-PSD{
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 60%;
+    margin-bottom: 50px;
+
 }
 
 #multidots{
-    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 42px;
+    height: 15px;
+    justify-content: space-between;
+
 }
+.slide_button_dot{
+    max-height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+/*
+#multidots:first-child{
+    margin-right: 2px;
+}
+#multidots:nth-child(2){
+    margin-right: 2px;
+    margin-left: 2px;
+}
+#multidots:last-child{
+    margin-left: 2px;
+}
+*/
+
 .flex_clients{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 285px 1px 285px;
+    padding: 70px 285px 0px 285px;
     margin: 0 0 0 0;
     word-wrap: normal;
 
-    background: rgb(240, 240, 240);
-    /*background-image: */
+    background: white;
     height: 525px;
 }
 
-.flex_clients div h2{
-    font-weight: 200;
-    margin: 0 0 0 0;
+.flex_clients div img{
 
 }
-.flex_clients hr{
-    width: 170px;
-    /*толщина + wave */
-    margin-top: 30px;
-    margin-bottom: 0;
-}
 #client_main_text{
-    margin: 45px 25px 80px 25px;
+    margin: 5px 25px 80px 25px;
     text-align: center;
     padding: 0 0 0 0;
+    font-family: "Crimson Roman", sans-serif;
+    font-style: normal;
+    font-size: 19px;
+
 }
 #img_flex_array{
     display: flex;
@@ -613,7 +660,6 @@ footer .logo_h2 img{
 
 #img_flex_array img{
     height: 120px;
-    width: 120px;
-
+    width: 150px;
 }
 
