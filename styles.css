@@ -1,3 +1,5 @@
+/*TODO $footer CRIMSON ROMAN -> CRIMSON TEXT
+   footer background: bad source image*/
 
 /* montserrat-regular - latin_cyrillic */
 @font-face {
@@ -443,7 +445,7 @@ h1 {
         .service-item span {
             color: #d8d8d8;
         }
-<<<<<<< HEAD
+
 
 .our-team-container {
     background-image: url("img/our-team-bg.png");
@@ -534,7 +536,7 @@ h1 {
         .our-team-members-item:hover .our-team-member-info {
             display: block;
         }
-=======
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -549,9 +551,9 @@ body {
 }
 
 footer {
-    background-color: rgb(42, 42, 42);/*url("https://img.freepik.com/free-photo/dark-fabric-seamless-texture-for-background_272991-59.jpg");*/
+    background-color: rgb(42, 42, 42);
+/*    background-image: url("img/footer_bad_background.png"); */
     height: 640px;
-
 }
 
 .flex_footer{
@@ -562,7 +564,6 @@ footer {
     height: 85%;
     margin-left: 215px;
     margin-right: 215px;
-
 }
 
 .flex_footer .sub_flex_footer {
@@ -572,6 +573,7 @@ footer {
     align-items: flex-start;
     height : 100%;
     width: 370px;
+    letter-spacing: 0.1em;
 }
 
 .flex_footer div{
@@ -579,12 +581,14 @@ footer {
 }
 
 div form input{
+    font-family: "Montserrat Regular", sans-serif;
     border: rgb(137, 137, 137) solid 2px;
     color: rgb(137, 137, 137);
     background: none;
     width: 324px;
     margin: 12px 15px;
     padding: 23px 22px;
+    font-style: italic;
 }
 
 div form textarea{
@@ -596,15 +600,17 @@ div form textarea{
     height: 95px;
     padding: 23px 22px;
     resize: none;
+    font-style: italic;
 }
 div form button{
     margin-left: 15px;
     width: 135px;
     height: 40px;
     background: rgb(70, 70, 70);
-    color: white;
+    color: #e3e3e3;
     border: none;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.1em;
 }
 div form button:hover{
     background-color: rgb(180, 180, 180);
@@ -626,16 +632,19 @@ footer p{
 #gray136text{
     color: rgb(136, 136, 136);
     margin-top: -15px;
-    font-family: "Crimson Roman";
+    font-family: "Crimson Roman", serif;
 }
 footer div .white_text{
-    color: white;
+    color: #e3e3e3;
+    font-size: 13px;
+
     margin: 0;
+
 
 }
 #gray137text{
     color: rgb(137, 137, 137);
-    font-family: "Crimson Roman";
+    font-family: "Crimson Roman", sans-serif;
 }
 
 .footer_copyright{
@@ -650,6 +659,11 @@ footer .logo_h2{
     display: flex;
     flex-direction: row;
 }
+#footer_logo_text{
+    margin-top: 3px;
+    font-weight: 400;
+    font-size: 18px;
+}
 footer .logo_h2 img{
     margin-top: -3px;
     width : 40px;
@@ -659,41 +673,72 @@ footer .logo_h2 img{
     margin-right: 12px;
 }
 
+.statement_out{
+    background-image: url("img/statement_back.png");
+    width: 100%;
+    height: 524px;
+}
+
 .flex_statement{
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    background-image: url("img/statement_back.png");
-    width: 100%;
-    height: 524px;
+    width: 50%;
+    height: 100%;
+    margin: 0 400px;
     font-family: "Crimson Roman";
     font-style: italic;
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #d1d1d1;
 }
+.flex_statement:nth-child(2) span{}
+
 #state_avatar img{
     margin-top: 75px;
     margin-bottom: 40px;
 }
 .state_quote{
-    font-family: "Crimson Roman";
     font-style: italic;
-    font-size: 60px;
+    font-size: 94px;
+    line-height: 0;
+}
+.quote_at_start{
+    position: relative;
+    top: 60px;
+    right: 30px;
+}
+.state_relative_container{
+    position: relative;
+}
+.quote_at_end{
+    display: inline-block;
+    position: absolute;
+    top: 55px;
+    right: 115px;
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+#statement{
+    display: inline-block;
+    text-align: center;
 }
 
 #state_author{
     margin-top: 75px;
     margin-bottom: 22px;
-    font-family: "Montserrat Regular", sans-serif;
+    font-family: "Montserrat Regular";
     font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.1em;
 }
 
 #Free-PSD{
     font-family: "Montserrat Regular", sans-serif;
-    font-size: 60%;
+    font-size: 13px;
     margin-bottom: 50px;
-
 }
 
 #multidots{
@@ -702,31 +747,24 @@ footer .logo_h2 img{
     width: 42px;
     height: 15px;
     justify-content: space-between;
-
 }
 .slide_button_dot{
     max-height: 12px;
     border-radius: 50%;
     border: none;
+    background-color: #c5c5c5;
 }
-/*
-#multidots:first-child{
-    margin-right: 2px;
+#but_chosen{
+    background-color: #e3e3e3;
 }
-#multidots:nth-child(2){
-    margin-right: 2px;
-    margin-left: 2px;
-}
-#multidots:last-child{
-    margin-left: 2px;
-}
-*/
+
+
 
 .flex_clients{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 285px 0px 285px;
+    padding: 70px 285px 0 285px;
     margin: 0 0 0 0;
     word-wrap: normal;
 
@@ -738,12 +776,16 @@ footer .logo_h2 img{
 
 }
 #client_main_text{
-    margin: 5px 25px 80px 25px;
+    margin: 5px 0 80px 0;
     text-align: center;
     padding: 0 0 0 0;
     font-family: "Crimson Roman", sans-serif;
     font-style: normal;
     font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #3e3d3d;
 
 }
 #img_flex_array{
@@ -759,4 +801,4 @@ footer .logo_h2 img{
     width: 150px;
 }
 
->>>>>>> d2b323bd41fc86d469c60396257375f46f731d72
+
