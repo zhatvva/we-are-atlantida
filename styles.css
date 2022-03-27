@@ -503,8 +503,7 @@ h1 {
         }
 
         .our-team-member-info h3 {
-            margin: 0;
-
+            margin: 0;  
             font-family: "Montserrat Regular", sans-serif;
             font-size: 13px;
             line-height: 18px;
@@ -536,6 +535,22 @@ h1 {
         .our-team-members-item:hover .our-team-member-info {
             display: block;
         }
+
+.portfolio-container{
+    text-align: center;
+    background-color: #ffffff;
+}
+    
+    .portfolio-container h2{
+        padding-top: 70px;
+    }
+    
+    .portfolio-container span{
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
 
 body {
     margin: 0 auto;
