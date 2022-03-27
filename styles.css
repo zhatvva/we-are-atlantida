@@ -537,6 +537,7 @@ h1 {
 .portfolio-container{
     text-align: center;
     background-color: #ffffff;
+    max-height: 1050px;
 }
     
     .portfolio-container h2{
@@ -549,6 +550,44 @@ h1 {
         margin: 0 auto;
         color: #3e3d3d;
     }
+
+.portfolio-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+} 
+    .portfolio-buttons button{
+        text-transform: capitalize;
+        width: 139px;
+        height: 39px;
+        margin: 0 4px;
+    }
+
+.portfolio-examples{
+    position: relative;
+    height: 689px;
+    margin: 0 auto;
+    padding-top: 52px;
+    box-sizing: border-box;    
+}
+
+    .portfolio-examples-upper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 1600px;    
+    }
+    .portfolio-examples-bottom{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 0;
+    }
+
+.portfolio-examples-1{
+    background-image: url("img/example_1.png");
+}
 
 body {
     margin: 0 auto;
