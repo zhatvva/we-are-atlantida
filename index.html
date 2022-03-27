@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Atlantida</title>
   <script src="https://kit.fontawesome.com/9a030de552.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
@@ -190,56 +191,68 @@
     </div>
   </div>
 
-  <div class="flex_clients">
-    <div>
-      <h2 class="h2-black">CLIENTS</h2>
-    </div>
-  
-    <div id="client_main_text">
-      Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amer
-      pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobrtis, turpis
-      lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget
-      risus.
-    </div>
-  
-    <div id="img_flex_array" >
-      <img src="img\clients_brando.png" alt="brando">
-      <img src="img\clients_ww.png" alt="work_wear" >
-      <img src="img\clients_novi.png" alt="Hamburger">
-      <img src="img\clients_motor.png" alt="motor">
-      <img src="img\clients_cassandra.png" alt="cassandra">
-    </div>
+</main>
+
+<div class="flex_clients">
+  <div>
+    <h2 class="h2-black">CLIENTS</h2>
   </div>
-  
+
+  <div id="client_main_text">
+    Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amer
+    pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobrtis, turpis
+    lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget
+    risus.
+  </div>
+
+  <div id="img_flex_array" >
+    <img src="img/clients_brando.png" alt="brando">
+    <img src="img/clients_ww.png" alt="work_wear" >
+    <img src="img/clients_novi.png" alt="Hamburger">
+    <img src="img/clients_motor.png" alt="motor">
+    <img src="img/clients_cassandra.png" alt="cassandra">
+  </div>
+</div>
+<!--  done -->
+
+<div class="statement_out">
   <div class="flex_statement">
     <div id="state_avatar">
-      <img src="img\statement_ava.png" height="110px" width="110px">
+      <img src="img/statement_ava.png"  alt="avatar">
     </div>
-    <div>
-        <span class="state_quote">"</span>
-        <span id="statement">Lorem ipsum dolor sit amet,
-        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</span>
-        <span class="state_quote">"</span>
+    <div class="state_relative_container">
+      <span class="state_quote quote_at_start">“</span>
+        <span id="statement">
+          Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+          Curabitur eu libero ut erat sodales finibus sed in dolor.
+          Etiam iaculis, nibh a lobortis egestas, est urna sodales
+        </span>
+      <span class="state_quote quote_at_end">“</span>
+<!--  done -->
     </div>
     <div id="state_author">ALEXANDR PODVALNY</div>
     <div id="Free-PSD">Free-PSD-Template.com Company</div>
     <div id="multidots">
       <button class="slide_button_dot"></button>
       <button class="slide_button_dot"></button>
-      <button class="slide_button_dot"></button>
+      <button class="slide_button_dot" id="but_chosen"></button>
     </div>
   </div>
-  
-  <img class="map_img" src="img\map.png" alt="местоположение">
-</main>
+</div>
+
+<img class="map_img" src="img/Map.png" alt="местоположение">
+
 
 <footer>
   <div class="flex_footer">
     <div class="sub_flex_footer">
 
       <div class="logo_h2">
-        <img class="footer_logo" src="img\footer_logo.png" alt="лого">
-        <h2 class="white_text">
+        <a href="#">
+          <img class="footer_logo" src="img/footer_logo.png" alt="лого">
+        </a>
+        <h2 class="white_text" id="footer_logo_text">
           ATLANTIDA
         </h2>
       </div>
@@ -269,15 +282,14 @@
         <input type="text" placeholder="Name*">
         <input type="text" placeholder="E-mail*"><br>
         <input type="text" placeholder="Telephone*">
-        <input type="text" placeholder="Web-site"><br>
-        <textarea type="text" placeholder="Message"></textarea><br>
+        <input type="text" placeholder="Website"><br>
+        <textarea placeholder="Message"></textarea><br>
         <button>Submit</button><br>
       </form>
     </div>
   </div><br>
   <hr>
   <p class="footer_copyright">Copyright © 2015 Atlantida Theme</p>
-
 </footer>
 
 </body>
