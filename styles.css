@@ -585,9 +585,126 @@ h1 {
         bottom: 0;
     }
 
-.portfolio-examples-1{
-    background-image: url("img/example_1.png");
+.prices-container{
+    text-align: center;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+    .prices-container h2{
+        padding-top: 70px;
+    }
+
+    .prices-container > span{
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
+
+    .prices-content{ 
+        display: flex;
+        justify-content: space-evenly;
+        padding: 80px 0 85px;
+    }
+
+    .price-item{
+        padding: 50px 70px 60px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 370px;   
+        height: 550px;  
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+
+    .price-item button{
+        text-transform: capitalize;
+        width: 139px;
+        height: 39px;
+        margin: 35px 0 4px;
+    }
+
+    .price-name{
+        font-family: Montserrat;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        color: #3e3d3d;
+    }
+
+    .price-icon{
+        position: relative;
+    }
+
+    .price-icon::before,
+    .price-icon::after{
+        content: "";
+        position: absolute;
+        height: 2px;            
+        width: 37%;
+        top: 56px;
+        background-color: #3e3d3d;
+        z-index: 0;
+    }
+
+    .price-icon::before{
+        left: 0;
+    }
+    
+    .price-icon img{
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        margin-left: -28px;
+        border-radius: 50%;
+        border: 1.8px solid #3e3d3d;
+        padding: 10px;
+        z-index: 1;
+    }    
+    
+    .price-icon::after{
+        right: 0;
+    }
+
+    .price-value-container{
+        display: flex;
+        justify-content: center;  
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+        .price-value-symbol{
+            font-family: Montserrat;
+            font-size: 28.5px;
+            font-weight: 400;
+            color: #3e3d3d;
+            padding-top: 0px;
+            padding-right: 10px;
+        }
+        .price-value{
+            font-family: Montserrat;
+            font-size: 70px;
+            font-weight: 700;
+            color: #3e3d3d;
+            padding-right: 20px;
+            padding-bottom: 12px;
+        }
+    
+    .plan-info-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-info-text{
+        font-family: 'Crimson Text';
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        font-style: italic;
+        color: #3e3d3d;
+    }
 
 body {
     margin: 0 auto;
@@ -605,7 +722,6 @@ body {
 footer {
     background-color: rgb(42, 42, 42);/*url("https://img.freepik.com/free-photo/dark-fabric-seamless-texture-for-background_272991-59.jpg");*/
     height: 640px;
-
 }
 
 .flex_footer{
