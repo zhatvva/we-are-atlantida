@@ -553,6 +553,76 @@ h1 {
         color: #3e3d3d;
     }
 
+.quality-container{
+    width: 100%;
+    height: 179px;
+    background: #3e3d3d;
+    display: flex;
+}
+
+    .quality-container img{
+        width: 109px;
+        height: 104px;
+        margin-left: 228px;
+        padding-top: 36px;
+    }
+
+    .quality-title{
+        margin-left: 45px;
+        padding-top: 36px;
+        text-align: center;
+        color: #e3e3e3;
+        letter-spacing: 1.5px;
+        font-size: 16px;
+        font-family: "Montserrat", serif;
+        width: 582px;
+    }
+
+    .quality-text{
+        margin-left: 60px;
+        margin-top: 19px;
+        text-align: left;
+        color: #646464;
+        font-size: 14px;
+        font-family: "Crimson Text Italic", serif;
+        font-style: italic;
+        width: 630px;
+    }
+
+    .quality-container button{
+        text-transform: capitalize;
+        width: 134px;
+        height: 39px;
+        margin: 0 4px;
+        border: 2px solid rgb(227, 227, 227);
+        color: rgb(227, 227, 227);
+        margin-left: 134px;
+        margin-top: 66px;
+    }
+
+    .quality-container button:hover{
+        background-color: rgb(227, 227, 227);
+        color: rgb(45, 45, 47);
+    }
+
+ 
+
+.blog-container{
+    text-align: center;
+    background-color: rgb(227, 227, 227); 
+}
+
+    .blog-container h2{
+        padding-top: 70px;
+    }
+
+    .blog-container span{
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
+
 .portfolio-buttons{
     display: flex;
     justify-content: center;
@@ -603,6 +673,64 @@ h1 {
         display: block;
         margin: 0 auto;
         color: #3e3d3d;
+    }
+
+    .blog-table-container{
+        width: 1600px;
+        height: 825px;
+        display: flex;
+        margin-top: 82px;
+        flex-wrap: wrap;
+    }
+
+    .blog-table-pairs{
+        height: 413px;
+        width: 800px;
+        display: flex;
+    }
+
+    .blog-panel{
+        width: 400px;
+        height: 413px;
+        display: inline-block;
+    }
+
+    .s-textPanel-textArea {
+        width: 330px;
+        height: 313px;
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+
+    .s-textPanel-textArea-dateAuthor {
+        width: 154px;
+        font-size: 11px;
+        font-family: "Crimson Text Italic", cursive;
+        font-style: italic;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(227, 227, 227);
+        border-bottom: 1px solid rgb(69, 69, 69);
+        padding-bottom: 14px;
+    }
+
+    .s-textPanel-textArea-title {
+        letter-spacing: 1px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        color: rgb(227, 227, 227);
+    }
+
+    .s-textPanel-textArea-text {
+        margin-top: 30px;
+        width: 319px;
+        height: 242px;
+        font-size: 13px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #949494;
+        font-family: "Crimson Text", sans-serif;
     }
 
     .prices-content{ 
