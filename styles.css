@@ -152,10 +152,20 @@ h1 {
 }
 
 .main-header {
-    background-image: url("img/Slider main.png");
+    /*background-image: url("img/Slider main.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 698px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .navigation-bar {
@@ -503,8 +513,7 @@ h1 {
         }
 
         .our-team-member-info h3 {
-            margin: 0;
-
+            margin: 0;  
             font-family: "Montserrat Regular", sans-serif;
             font-size: 13px;
             line-height: 18px;
@@ -536,6 +545,306 @@ h1 {
         .our-team-members-item:hover .our-team-member-info {
             display: block;
         }
+
+.portfolio-container{
+    text-align: center;
+    background-color: #ffffff;
+    max-height: 1050px;
+}
+    
+    .portfolio-container h2{
+        padding-top: 70px;
+    }
+    
+    .portfolio-container span{
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
+
+.quality-container{
+    width: 100%;
+    height: 179px;
+    background: #3e3d3d;
+    display: flex;
+}
+
+    .quality-container img{
+        width: 109px;
+        height: 104px;
+        margin-left: 228px;
+        padding-top: 36px;
+    }
+
+    .quality-title{
+        margin-left: 45px;
+        padding-top: 36px;
+        text-align: center;
+        color: #e3e3e3;
+        letter-spacing: 1.5px;
+        font-size: 16px;
+        font-family: "Montserrat", serif;
+        width: 582px;
+    }
+
+    .quality-text{
+        margin-left: 60px;
+        margin-top: 19px;
+        text-align: left;
+        color: #646464;
+        font-size: 14px;
+        font-family: "Crimson Text Italic", serif;
+        font-style: italic;
+        width: 630px;
+    }
+
+    .quality-container button{
+        text-transform: capitalize;
+        width: 134px;
+        height: 39px;
+        margin: 0 4px;
+        border: 2px solid rgb(227, 227, 227);
+        color: rgb(227, 227, 227);
+        margin-left: 134px;
+        margin-top: 66px;
+    }
+
+    .quality-container button:hover{
+        background-color: rgb(227, 227, 227);
+        color: rgb(45, 45, 47);
+    }
+
+ 
+
+.blog-container{
+    text-align: center;
+    background-color: rgb(227, 227, 227); 
+}
+
+    .blog-container h2{
+        padding-top: 70px;
+    }
+
+    .blog-container span{
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
+
+.portfolio-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+} 
+    .portfolio-buttons button{
+        text-transform: capitalize;
+        width: 139px;
+        height: 39px;
+        margin: 0 4px;
+    }
+
+.portfolio-examples{
+    position: relative;
+    height: 689px;
+    margin: 0 auto;
+    padding-top: 52px;
+    box-sizing: border-box;    
+}
+
+    .portfolio-examples-upper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 1600px;    
+    }
+    .portfolio-examples-bottom{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 0;
+    }
+
+.prices-container{
+    text-align: center;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+    .prices-container h2{
+        padding-top: 70px;
+    }
+
+    .prices-container > span{
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+        color: #3e3d3d;
+    }
+
+    .blog-table-container{
+        width: 1600px;
+        height: 825px;
+        display: flex;
+        margin-top: 82px;
+        flex-wrap: wrap;
+    }
+
+    .blog-table-pairs{
+        height: 413px;
+        width: 800px;
+        display: flex;
+    }
+
+    .blog-panel{
+        width: 400px;
+        height: 413px;
+        display: inline-block;
+    }
+
+    .s-textPanel-textArea {
+        width: 330px;
+        height: 313px;
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+
+    .s-textPanel-textArea-dateAuthor {
+        width: 154px;
+        font-size: 11px;
+        font-family: "Crimson Text Italic", cursive;
+        font-style: italic;
+        margin-bottom: 0;
+        text-align: left;
+        color: rgb(227, 227, 227);
+        border-bottom: 1px solid rgb(69, 69, 69);
+        padding-bottom: 14px;
+    }
+
+    .s-textPanel-textArea-title {
+        letter-spacing: 1px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        color: rgb(227, 227, 227);
+    }
+
+    .s-textPanel-textArea-text {
+        margin-top: 30px;
+        width: 319px;
+        height: 242px;
+        font-size: 13px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #949494;
+        font-family: "Crimson Text", sans-serif;
+    }
+
+    .prices-content{ 
+        display: flex;
+        justify-content: space-evenly;
+        padding: 80px 0 85px;
+    }
+
+    .price-item{
+        padding: 50px 70px 60px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 370px;   
+        height: 550px;  
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+
+    .price-item button{
+        text-transform: capitalize;
+        width: 139px;
+        height: 39px;
+        margin: 35px 0 4px;
+    }
+
+    .price-name{
+        font-family: Montserrat;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        color: #3e3d3d;
+    }
+
+    .price-icon{
+        position: relative;
+    }
+
+    .price-icon::before,
+    .price-icon::after{
+        content: "";
+        position: absolute;
+        height: 2px;            
+        width: 37%;
+        top: 56px;
+        background-color: #3e3d3d;
+        z-index: 0;
+    }
+
+    .price-icon::before{
+        left: 0;
+    }
+    
+    .price-icon img{
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        margin-left: -28px;
+        border-radius: 50%;
+        border: 1.8px solid #3e3d3d;
+        padding: 10px;
+        z-index: 1;
+    }    
+    
+    .price-icon::after{
+        right: 0;
+    }
+
+    .price-value-container{
+        display: flex;
+        justify-content: center;  
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+        .price-value-symbol{
+            font-family: Montserrat;
+            font-size: 28.5px;
+            font-weight: 400;
+            color: #3e3d3d;
+            padding-top: 0px;
+            padding-right: 10px;
+        }
+        .price-value{
+            font-family: Montserrat;
+            font-size: 70px;
+            font-weight: 700;
+            color: #3e3d3d;
+            padding-right: 20px;
+            padding-bottom: 12px;
+        }
+    
+    .plan-info-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .plan-info-text{
+        font-family: 'Crimson Text';
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        font-style: italic;
+        color: #3e3d3d;
+    }
 
 body {
     margin: 0 auto;
@@ -688,7 +997,19 @@ footer .logo_h2 img{
     background-image: url("img/statement_back.png");
     width: 100%;
     height: 524px;
+    overflow: hidden;
 }
+
+.slider-wrapper {
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+}
+
+    .slider-item {
+        width: 1600px;
+        flex-shrink: 0;
+    }
 
 .flex_statement{
     display: flex;
@@ -706,7 +1027,7 @@ footer .logo_h2 img{
 }
 .flex_statement:nth-child(2) span{}
 
-#state_avatar img{
+.state_avatar img{
     margin-top: 75px;
     margin-bottom: 40px;
 }
@@ -732,12 +1053,12 @@ footer .logo_h2 img{
     transform: rotate(180deg);
 }
 
-#statement{
+.statement{
     display: inline-block;
     text-align: center;
 }
 
-#state_author{
+.state_author{
     margin-top: 50px;
     margin-bottom: 18px;
     font-family: "Montserrat Regular";
@@ -746,7 +1067,7 @@ footer .logo_h2 img{
     letter-spacing: 0.1em;
 }
 
-#Free-PSD{
+.Free-PSD{
     font-family: "Montserrat Regular", sans-serif;
     font-size: 13px;
     margin-bottom: 40px;
@@ -764,8 +1085,9 @@ footer .logo_h2 img{
     border-radius: 50%;
     border: none;
     background-color: #c5c5c5;
+    cursor: pointer;
 }
-#but_chosen{
+.but_chosen{
     background-color: #e3e3e3;
 }
 
