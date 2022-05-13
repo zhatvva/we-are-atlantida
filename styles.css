@@ -152,10 +152,20 @@ h1 {
 }
 
 .main-header {
-    background-image: url("img/Slider main.png");
+    /*background-image: url("img/Slider main.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 698px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .navigation-bar {
@@ -976,7 +986,19 @@ footer .logo_h2 img{
     background-image: url("img/statement_back.png");
     width: 100%;
     height: 524px;
+    overflow: hidden;
 }
+
+.slider-wrapper {
+    display: flex;
+    position: relative;
+    transition: all ease 1s;
+}
+
+    .slider-item {
+        width: 1600px;
+        flex-shrink: 0;
+    }
 
 .flex_statement{
     display: flex;
@@ -994,7 +1016,7 @@ footer .logo_h2 img{
 }
 .flex_statement:nth-child(2) span{}
 
-#state_avatar img{
+.state_avatar img{
     margin-top: 75px;
     margin-bottom: 40px;
 }
@@ -1020,12 +1042,12 @@ footer .logo_h2 img{
     transform: rotate(180deg);
 }
 
-#statement{
+.statement{
     display: inline-block;
     text-align: center;
 }
 
-#state_author{
+.state_author{
     margin-top: 50px;
     margin-bottom: 18px;
     font-family: "Montserrat Regular";
@@ -1034,7 +1056,7 @@ footer .logo_h2 img{
     letter-spacing: 0.1em;
 }
 
-#Free-PSD{
+.Free-PSD{
     font-family: "Montserrat Regular", sans-serif;
     font-size: 13px;
     margin-bottom: 40px;
@@ -1052,8 +1074,9 @@ footer .logo_h2 img{
     border-radius: 50%;
     border: none;
     background-color: #c5c5c5;
+    cursor: pointer;
 }
-#but_chosen{
+.but_chosen{
     background-color: #e3e3e3;
 }
 
