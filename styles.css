@@ -602,7 +602,7 @@ div form textarea{
     resize: none;
     font-style: italic;
 }
-div form button{
+#form-button {
     margin-left: 15px;
     width: 135px;
     height: 40px;
@@ -612,10 +612,21 @@ div form button{
     font-weight: 400;
     letter-spacing: 0.1em;
 }
-div form button:hover{
+#form-button:hover{
     background-color: rgb(180, 180, 180);
     color: black;
 
+}
+
+#form-button-disabled{
+    margin-left: 15px;
+    width: 135px;
+    height: 40px;
+    background: rgb(70, 70, 70);
+    color: #000;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 0.1em;
 }
 
 footer hr{
@@ -802,3 +813,34 @@ footer .logo_h2 img{
 }
 
 
+#modal-window {
+    position: fixed;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    top: 30%;
+    background-color: #3e3d3d;
+}
+
+#modal-window div{
+    padding-top: 10%;
+    position: relative;
+}
+
+.button-modal{
+    background: transparent;
+    border: transparent;
+    color: #e3e3e3;
+    font-size: 20px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+}
+
+.button-modal:hover{
+    color: #3e3d3d;
+    background-color: #c5c5c5;
+}
