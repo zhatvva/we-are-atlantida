@@ -1,6 +1,3 @@
-//Danila
-
-//modal_window = "<div id='modal-window'><div><button class='button-modal' onclick='CloseModal();'>X</button></div><div class='h2-white'>your data accepted</div></div>"
 modal_window_ext = "<div><button class='button-modal' onclick='CloseModal();'>X</button></div><div class='h2-white'>your data accepted</div>";
 var modal_window_node;
 const body = document.querySelector("body");
@@ -69,8 +66,6 @@ function IsValidName()
 
 function formHandlerSubmit(event) {
     event.preventDefault();
-    //body.innerHTML += "\n" + modal_window;
-    //console.log(body.innerHTML);
     modal_window_node = document.createElement('div');
     modal_window_node.innerHTML = modal_window_ext;
     modal_window_node.id = "modal-window";
