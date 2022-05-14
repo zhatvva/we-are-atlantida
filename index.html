@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:style="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>Atlantida</title>
   <script src="https://kit.fontawesome.com/9a030de552.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+
 </head>
 <body>
 
 <header class="main-header">
+
+  <div class="slider-line" id="slider-header">
+    <img src="img/Slider%20main.png" alt="Slider image">
+    <img src="img/Slider%20main.png" alt="Slider image">
+    <img src="img/Slider%20main.png" alt="Slider image">
+    <img src="img/Slider%20main.png" alt="Slider image">
+  </div>
 
   <div class="navigation-bar">
     <div class="content-container">
@@ -26,7 +35,7 @@
           <li><a href="#our-team">team</a></li>
           <li><a href="#portfolio">portfolio</a></li>
           <li><a href="#prices">prices</a></li>
-          <li><a href="#">blog</a></li>
+          <li><a href="#blog">blog</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -42,7 +51,7 @@
 
   <div class="slider">
     <div class="content-container">
-      <button class="slider-left slide-button"></button>
+      <button class="slider-left slide-button" id="slider-header-prev"></button>
       <div>
         <span class="normal-text">Design Studio and Digital Agency</span>
         <div class="slider-header">
@@ -51,7 +60,7 @@
         <button class="button-class slider-button">Get Started</button>
         <img src="img/get-started-arrow.png" alt="" class="slider-button-arrow">
       </div>
-      <button class="slider-right slide-button"></button>
+      <button class="slider-right slide-button" id="slider-header-next"></button>
     </div>
   </div>
 
@@ -189,29 +198,27 @@
       </div>
     </div>
   </div>
-
-    <div class="portfolio-container" id="portfolio">
-      <h2 class="h2-black">portfolio</h2>
-      <span class="normal-text">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.</span>
-      <div class="portfolio-buttons">
-        <button class="button-class">All</button>
-        <button class="button-class">Websites</button>
-        <button class="button-class">Brochures</button>
-        <button class="button-class">Logos</button>
+  <div class="portfolio-container" id="portfolio">
+    <h2 class="h2-black">portfolio</h2>
+    <span class="normal-text">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.</span>
+    <div class="portfolio-buttons">
+      <button class="button-class" data-filter="all">All</button>
+      <button class="button-class" data-filter="websites">Websites</button>
+      <button class="button-class" data-filter="brochures">Brochures</button>
+      <button class="button-class" data-filter="logos">Logos</button>
+    </div>
+    <div class="portfolio-examples">
+      <div class="portfolio-examples-upper">
+        <div class="card websites"><img src="img/example_1.png" alt="example_1"></div>
+        <div class="card brochures"><img src="img/example_3.png" alt="example_3"></div>
+        <div class="card logos"><img src="img/example_5.png" alt="example_5"></div>
+        <div class="card brochures"><img src="img/example_7.png" alt="example_7"></div>
       </div>
-      <div class="portfolio-examples">
-        <div class="portfolio-examples-upper">
-          <img src="img/example_1.png" alt="example_1">
-          <img src="img/example_3.png" alt="example_3">
-          <img src="img/example_5.png" alt="example_5">
-          <img src="img/example_7.png" alt="example_7">
-        </div>
-        <div class="portfolio-examples-bottom">
-          <img src="img/example_2.png" alt="example_2">
-          <img src="img/example_4.png" alt="example_4">
-          <img src="img/example_6.png" alt="example_6">
-          <img src="img/example_8.png" alt="example_8">
-        </div>
+      <div class="portfolio-examples-bottom">
+        <div class="card logos"><img src="img/example_2.png" alt="example_2"></div>
+        <div class="card logos"><img src="img/example_4.png" alt="example_4"></div>
+        <div class="card brochures"><img src="img/example_6.png" alt="example_6"></div>
+        <div class="card websites"><img src="img/example_8.png" alt="example_8"></div>
       </div>
     </div>
 
@@ -276,8 +283,140 @@
     </div>
   </div>
 
-</main>
+    <div class="quality-container">
+  	<img src="img/kompas.png">
+  	<div>
+	  	<div class="quality-title">
+	  		<p>Looking for a quality and affordable for your next project ?</p>
+	  	</div>
+	  	<div class="quality-text">
+	  		<p>
+	  			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales finibus sed
+	            in dolor.
+	            Etiam iaculis, nibh a lobortis egestas, est urna sodales
+	  		</p>
+	  	</div>
+  	</div>
+  	<button class="button-class">Purchase</button>
+  </div>
 
+  <div class="blog-container" id="blog">
+  	<h2 class="h2-black">blog</h2>
+  	<span class="normal-text">Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.</span>
+  	<div class="blog-table-container">
+  		<div class="blog-table-pairs">
+  			<div class="blog-panel" style="overflow: hidden"><img src="img/blog-table-image1.jpg" alt="mountain river" height="413"></div>	
+  			<div class="blog-panel" style="background-color: #2d2d2f">
+                <div class="s-textPanel-textArea">
+                    <p class="s-textPanel-textArea-dateAuthor">
+                        <time>14 Aug 2015</time>
+                        / By Admin
+                    </p>
+                    <p class="s-textPanel-textArea-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7" width="4" height="7"
+                             style="margin-right: 5px">
+                            <image width="4" height="7"
+                                   href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHAQMAAAAVq36TAAAAAXNSR0IB2cksfwAAAAZQTFRF4+Pj4+Pjef3+LgAAAAJ0Uk5T/wDltzBKAAAAFElEQVR4nGMoYDBgEGBgAGIDhgIACa4BYT+qqxcAAAAASUVORK5CYII="/>
+                        </svg>
+                        DONEC ID LOBORTIS TELLUS MAECENAS.
+                    </p>
+                    <p class="s-textPanel-textArea-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+  		</div>
+  		<div class="blog-table-pairs">
+            <div class="blog-panel" style="overflow: hidden">
+                <img src="img/blog-table-image2.jpg" alt="mountains" style="transform: scale(1.01)">
+            </div>
+            <div class="blog-panel" style="background-color: #555557">
+                <div class="s-textPanel-textArea">
+                    <p class="s-textPanel-textArea-dateAuthor">
+                        <time>14 Aug 2015</time>
+                        / By Admin
+                    </p>
+                    <p class="s-textPanel-textArea-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7" width="4" height="7"
+                             style="margin-right: 5px">
+                            <image width="4" height="7" id="img1"
+                                   href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHAQMAAAAVq36TAAAAAXNSR0IB2cksfwAAAAZQTFRF4+Pj4+Pjef3+LgAAAAJ0Uk5T/wDltzBKAAAAFElEQVR4nGMoYDBgEGBgAGIDhgIACa4BYT+qqxcAAAAASUVORK5CYII="/>
+                        </svg>
+                        DONEC ID LOBORTIS TELLUS MAECENAS.
+                    </p>
+                    <p class="s-textPanel-textArea-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="blog-table-pairs">
+            <div class="blog-panel" style="background-color: #555557">
+                <div class="s-textPanel-textArea">
+                    <p class="s-textPanel-textArea-dateAuthor">
+                        <time>14 Aug 2015</time>
+                        / By Admin
+                    </p>
+                    <p class="s-textPanel-textArea-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7" width="4" height="7"
+                             style="margin-right: 5px">
+                            <image width="4" height="7" id="img1"
+                                   href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHAQMAAAAVq36TAAAAAXNSR0IB2cksfwAAAAZQTFRF4+Pj4+Pjef3+LgAAAAJ0Uk5T/wDltzBKAAAAFElEQVR4nGMoYDBgEGBgAGIDhgIACa4BYT+qqxcAAAAASUVORK5CYII="/>
+                        </svg>
+                        DONEC ID LOBORTIS TELLUS MAECENAS.
+                    </p>
+                    <p class="s-textPanel-textArea-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-panel" style="overflow: hidden">
+                <img src="img/blog-table-image3.jpg" alt="man in glasses" style="transform: scale(1.01)">
+            </div>
+        </div>
+        <div class="blog-table-pairs">
+            <div class="blog-panel" style="background-color: #2d2d2f">
+                <div class="s-textPanel-textArea">
+                    <p class="s-textPanel-textArea-dateAuthor">
+                        <time>14 Aug 2015</time>
+                        / By Admin
+                    </p>
+                    <p class="s-textPanel-textArea-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7" width="4" height="7"
+                             style="margin-right: 5px">
+                            <image width="4" height="7" id="img1"
+                                   href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHAQMAAAAVq36TAAAAAXNSR0IB2cksfwAAAAZQTFRF4+Pj4+Pjef3+LgAAAAJ0Uk5T/wDltzBKAAAAFElEQVR4nGMoYDBgEGBgAGIDhgIACa4BYT+qqxcAAAAASUVORK5CYII="/>
+                        </svg>
+                        DONEC ID LOBORTIS TELLUS MAECENAS.
+                    </p>
+                    <p class="s-textPanel-textArea-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
+                        consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
+                        fringilla tortor non aliquam congue. Class aptent taciti sociosqu ad litora torquent per
+                        conubia nostra, per inceptos himenaeos. Curabitur fringilla tortor non aliquam congue. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+            <div class="blog-panel" style="overflow: hidden">
+                <img src="img/blog-table-image4.jpg" alt="field" style="transform: scale(1.01)">
+            </div>
+        </div>
+  	</div>
+  </div>
+</main>
 <div class="flex_clients">
   <div>
     <h2 class="h2-black">CLIENTS</h2>
@@ -301,34 +440,78 @@
 <!--  done -->
 
 <div class="statement_out">
-  <div class="flex_statement">
-    <div id="state_avatar">
-      <img src="img/statement_ava.png"  alt="avatar">
-    </div>
-    <div class="state_relative_container">
-      <span class="state_quote quote_at_start">“</span>
-        <span id="statement">
+
+  <div class="slider-wrapper" id="statement-slider-wrapper">
+    <div class="slider-item">
+      <div class="flex_statement">
+        <div class="state_avatar">
+          <img src="img/statement_ava.png"  alt="avatar">
+        </div>
+        <div class="state_relative_container">
+          <span class="state_quote quote_at_start">“</span>
+          <span class="statement">
           Lorem ipsum dolor sit amet,
           consectetur adipiscing elit.
           Curabitur eu libero ut erat sodales finibus sed in dolor.
           Etiam iaculis, nibh a lobortis egestas, est urna sodales
         </span>
-      <span class="state_quote quote_at_end">“</span>
-<!--  done -->
+          <span class="state_quote quote_at_end">“</span>
+        </div>
+        <div class="state_author">ALEXANDR PODVALNY</div>
+        <div class="Free-PSD">Free-PSD-Template.com Company</div>
+      </div>
     </div>
-    <div id="state_author">ALEXANDR PODVALNY</div>
-    <div id="Free-PSD">Free-PSD-Template.com Company</div>
+    <div class="slider-item">
+      <div class="flex_statement">
+        <div class="state_avatar">
+          <img src="img/statement_ava.png"  alt="avatar">
+        </div>
+        <div class="state_relative_container">
+          <span class="state_quote quote_at_start">“</span>
+          <span class="statement">
+          Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+          Curabitur eu libero ut erat sodales finibus sed in dolor.
+          Etiam iaculis, nibh a lobortis egestas, est urna sodales
+        </span>
+          <span class="state_quote quote_at_end">“</span>
+        </div>
+        <div class="state_author">ALEXANDR PODVALNY</div>
+        <div class="Free-PSD">Free-PSD-Template.com Company</div>
+      </div>
+    </div>
+    <div class="slider-item">
+      <div class="flex_statement">
+        <div class="state_avatar">
+          <img src="img/statement_ava.png"  alt="avatar">
+        </div>
+        <div class="state_relative_container">
+          <span class="state_quote quote_at_start">“</span>
+          <span class="statement">
+          Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+          Curabitur eu libero ut erat sodales finibus sed in dolor.
+          Etiam iaculis, nibh a lobortis egestas, est urna sodales
+        </span>
+          <span class="state_quote quote_at_end">“</span>
+        </div>
+        <div class="state_author">ALEXANDR PODVALNY</div>
+        <div class="Free-PSD">Free-PSD-Template.com Company</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex_statement">
     <div id="multidots">
       <button class="slide_button_dot"></button>
       <button class="slide_button_dot"></button>
-      <button class="slide_button_dot" id="but_chosen"></button>
+      <button class="slide_button_dot"></button>
     </div>
   </div>
+
 </div>
 
 <img class="map_img" src="img/Map.png" alt="местоположение">
-
-
 <footer id="contact">
   <div class="flex_footer">
     <div class="sub_flex_footer">
@@ -364,18 +547,26 @@
     </div>
     <div>
       <form>
-        <input type="text" placeholder="Name*">
-        <input type="text" placeholder="E-mail*"><br>
-        <input type="text" placeholder="Telephone*">
+
+        <input id="form-name" type="text" placeholder="Name*" required oninput="IsValidName();">
+        <input id="form-mail" type="text" placeholder="E-mail*" required oninput="IsValidEmail();"><br>
+        <input id="form-phone" type="text" placeholder="Telephone*" required oninput="IsValidPhone();">
         <input type="text" placeholder="Website"><br>
         <textarea placeholder="Message"></textarea><br>
-        <button>Submit</button><br>
+        <button id="form-button-disabled" type="submit" disabled>Submit</button><br>
+
       </form>
     </div>
+    <script type="text/javascript" src="FormHandler.js"></script>
   </div><br>
   <hr>
   <p class="footer_copyright">Copyright © 2015 Atlantida Theme</p>
 </footer>
+
+
+
+<!-- ?-->
+<script src="script.js"></script>
 
 </body>
 </html>
