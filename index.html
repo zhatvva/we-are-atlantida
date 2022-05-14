@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:style="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>Atlantida</title>
   <script src="https://kit.fontawesome.com/9a030de552.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css">
+
 </head>
 <body>
 
@@ -547,19 +549,26 @@
     </div>
     <div>
       <form>
-        <input type="text" placeholder="Name*">
-        <input type="text" placeholder="E-mail*"><br>
-        <input type="text" placeholder="Telephone*">
+
+        <input id="form-name" type="text" placeholder="Name*" required oninput="IsValidName();">
+        <input id="form-mail" type="text" placeholder="E-mail*" required oninput="IsValidEmail();"><br>
+        <input id="form-phone" type="text" placeholder="Telephone*" required oninput="IsValidPhone();">
         <input type="text" placeholder="Website"><br>
         <textarea placeholder="Message"></textarea><br>
-        <button>Submit</button><br>
+        <button id="form-button-disabled" type="submit" disabled>Submit</button><br>
+
       </form>
     </div>
+    <script type="text/javascript" src="FormHandler.js"></script>
   </div><br>
   <hr>
   <p class="footer_copyright">Copyright © 2015 Atlantida Theme</p>
 </footer>
 
+
+
+<!-- ?-->
 <script src="script.js"></script>
+
 </body>
 </html>
