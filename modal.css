@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('fonts/lato-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('fonts/lato-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 .vmodal {
     display: none;
     position: fixed;
@@ -30,9 +21,8 @@
     background: #fff;
     padding: 30px;
     padding-top: 0;
-    border-radius: 10px;
     width: 40vh;
-    font-family: 'Lato';
+    font-family: "Montserrat Regular", sans-serif;
 }
 .tab-form.active {
     display: block;
@@ -49,13 +39,12 @@
     width: 100%;
 }
 .lbl-sign-up {
-    font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    color: #05aecc;
+    font-family: Montserrat;
+    font-size: 68px;
+    font-weight: 700;
+    color: #3e3d3d;
+    padding-right: 20px;
+    padding-bottom: 12px;
 }
 
 .input {
@@ -64,7 +53,7 @@
     padding: 5px;
     font-size: 14px;
     display: block;
-    width: 100%;
+    width: 260px;
 }
 
 .input:focus {
@@ -78,32 +67,27 @@
 }
 
 .sign-btn {
-    margin-top: 40px;
-    padding: 5px 20px;
-    border-radius: 10px;
-    background-color: #05aecc;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    text-align: center;
+    text-transform: capitalize;
+    align-self: center;
+    width: 139px;
+    height: 39px;
+    margin: 35px 0 4px;
+    border: 2px solid #3e3d3d;
+    background-color: transparent;
+    color: #3e3d3d;
     cursor: pointer;
-    border: 1px solid #05aecc;
+    letter-spacing: 0.1em;
+    font-family: "Montserrat Regular", sans-serif;
 }
 
 .sign-btn:hover {
-    transition: 0.5s;
-    background-color: #fff; 
-    color: #f0626e;
-    border: 1px solid #f0626e;
-}
-
-.privacy {
-    color: #05aecc;
+    background-color: #3e3d3d;
+    color: #cecece;
 }
 
 .sign-btn.disabled {
-    pointer-events: none; /* делаем элемент неактивным для взаимодействия */
-    cursor: default; /*  курсор в виде стрелки */
+    pointer-events: none; 
+    cursor: default; 
     background-color: #b9b9b9;
     border: 1px solid #b9b9b9;
 }
@@ -129,12 +113,21 @@
 }
 
 .success{
+    font-family: Montserrat;
     font-size: 38px;
-    color: #05aecc;
+    color: #3e3d3d;
     padding-top: 30px;
     text-align: center;
 }
 
-.hide {
+.alreadyRegistered{
+    font-family: Montserrat;
+    font-size: 38px;
+    color: #3e3d3d;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.modal-hide{
     display: none;
 }

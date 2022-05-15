@@ -26,7 +26,7 @@
     form.append(divInput);
     const nameInput = document.createElement('input');
     nameInput.classList.add('input');
-    nameInput.placeholder = 'Type your name';
+    nameInput.placeholder = 'Username';
     nameInput.type = 'text';
     nameInput.id = 'nameInput';
     form.append(nameInput);
@@ -42,7 +42,7 @@
     form.append(divInput);
     const emailInput = document.createElement('input');
     emailInput.classList.add('input');
-    emailInput.placeholder = 'Type your email';
+    emailInput.placeholder = 'Email';
     emailInput.type = 'email';
     emailInput.id = 'emailInput';
     form.append(emailInput);
@@ -54,27 +54,11 @@
 
     divInput = document.createElement('div');
     divInput.classList.add('text-input');
-    divInput.textContent = 'Password';
-    form.append(divInput);
-    const passInput = document.createElement('input');
-    passInput.classList.add('input');
-    passInput.placeholder = 'Type password';
-    passInput.type = 'password';
-    passInput.id = 'passInput';
-    form.append(passInput);
-    incorr = document.createElement('div');
-    incorr.classList.add('incorrect');
-    incorr.id = 'incPass';
-    incorr.textContent = 'Password is too short.';
-    form.append(incorr);
-
-    divInput = document.createElement('div');
-    divInput.classList.add('text-input');
     divInput.textContent = 'Phone Number';
     form.append(divInput);
     const phoneInput = document.createElement('input');
     phoneInput.classList.add('input');
-    phoneInput.placeholder = 'Type your phone number';
+    phoneInput.placeholder = 'Telephone';
     phoneInput.type = 'text';
     phoneInput.id = 'phoneInput';
     form.append(phoneInput);
@@ -85,15 +69,15 @@
     form.append(incorr);
 
     const signBtn = document.createElement('button');
-    signBtn.classList.add('button-class', 'disabled');
+    signBtn.classList.add('sign-btn', 'disabled');
     signBtn.id = 'signUp';
-    signBtn.textContent = 'Sign Up';
+    signBtn.textContent = 'Send';
     form.append(signBtn);
     document.body.appendChild(modal);
     return modal;
 }
 
-function createSuccessModal() {
+function createNextModal(text, id) {
     const modal = document.createElement('div');
     modal.classList.add('vmodal');
     modal.id = "myModal";
@@ -107,9 +91,9 @@ function createSuccessModal() {
     form.classList.add('tab-form');
     dwsForm.append(form);
     const textDiv = document.createElement('div');
-    textDiv.textContent = 'Registration completed successfully!';
-    textDiv.id = 'success';
-    textDiv.classList.add('success');
+    textDiv.textContent = text;
+    textDiv.id = id;
+    textDiv.classList.add(id);
     form.append(textDiv);
     document.body.appendChild(modal);
     return modal;    
@@ -131,7 +115,7 @@ const modalSelector = function() {
 }
 
 const successModalSelector = function() {
-    const $successModal = createSuccessModal();
+    const $successModal = createNextModal('Registration completed successfully!','success');
     return {
         open() {
             $successModal.style.display = "block";
@@ -145,41 +129,56 @@ const successModalSelector = function() {
     }    
 }
 
+const alreadyRegisteredModalSelector = function() {
+    const $successModal = createNextModal('You are already registered','alreadyRegistered');
+    return {
+        open() {
+            $successModal.style.display = "block";
+        },
+        close() {
+            $successModal.style.display = "none";
+        },
+        destroy() {
+            $successModal.remove();
+        }
+    }   
+}
+
 let modal = modalSelector();
 let successModal = successModalSelector();
+let alreadyRegisteredModal = alreadyRegisteredModalSelector();
 
-document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("sign-up") && localStorage.getItem("sign-up") !== "") {
-        document.getElementById("first-plan-signUp").style.display = "none";
-        document.getElementById("second-plan-signUp").style.display = "none";
-        document.getElementById("third-plan-signUp").style.display = "none";
-        let liFirst = document.createElement("li");
-        liFirst.classList.add("nav-menu-item-welcome");
-        liFirst.innerHTML = localStorage.getItem("sign-up");
-        document.getElementById("list").prepend(liFirst);
+const openModal = function(){
+    if (localStorage.getItem("sign-up") && localStorage.getItem("sign-up") !== "")
+    {
+        alreadyRegisteredModal.open();
+        setTimeout(function () {
+            alreadyRegisteredModal.close();
+        }, 5000);
     }
-    else {
-        document.getElementById("register-btn").classList.remove('hide');
-        document.getElementById("sign-in-btn").classList.remove('hide');
+    else
+    {
+        modal.open();
     }
-});
+}
 
 document.getElementById("first-plan-signUp").onclick = function() {
-    modal.open();
+    openModal();
 }
 
 document.getElementById("second-plan-signUp").onclick = function() {
-    modal.open();
+    openModal();
 }
 
 document.getElementById("third-plan-signUp").onclick = function() {
-    modal.open();
+    openModal();
 }
 
 window.onclick = function (event) {
     if (event.target.className == 'vmodal') {
         modal.close();
         successModal.close();
+        alreadyRegisteredModal.close();
     }
 }
 
@@ -208,16 +207,6 @@ document.getElementById("phoneInput").oninput = function () {
     validate();
 }
 
-document.getElementById("passInput").oninput = function () {
-    if (document.getElementById("passInput").value.length < 6) {
-        document.getElementById("incPass").style.display = "block";
-    }
-    else {
-        document.getElementById("incPass").style.display = "none";
-    }
-    validate();
-}
-
 document.getElementById("nameInput").oninput = function () {
     if (!isValidName(document.getElementById("nameInput").value)) {
         document.getElementById("incName").style.display = "block";
@@ -228,30 +217,20 @@ document.getElementById("nameInput").oninput = function () {
     validate();
 }
 
-function onSignUpButtonClick() {
+document.getElementById("signUp").onclick = function () {
     let liFirst = document.createElement('li');
     liFirst.classList.add("nav-menu-item-welcome");
     liFirst.textContent = document.getElementById("nameInput").value;
     localStorage.setItem('sign-up', document.getElementById("nameInput").value);
     modal.destroy();
-    nextModal.open();
+    successModal.open();
     setTimeout(function () {
-        nextModal.destroy();
-        document.getElementById("first-plan-signUp").style.display = "none";
-        document.getElementById("second-plan-signUp").style.display = "none";
-        document.getElementById("third-plan-signUp").style.display = "none";
-        document.getElementById("list").prepend(liFirst);
+        successModal.destroy();
     }, 5000);
 }
 
-document.getElementById("first-plan-signUp").onclick = onSignUpButtonClick();
-document.getElementById("second-plan-signUp").onclick = onSignUpButtonClick();
-document.getElementById("third-plan-signUp").onclick = onSignUpButtonClick();
-
-
 function validate() {
-    if (isValidEmail(document.getElementById("emailInput").value) && isValidPhone(document.getElementById("phoneInput").value) 
-        && document.getElementById("passInput").value.length >= 6) {
+    if (isValidEmail(document.getElementById("emailInput").value) && isValidPhone(document.getElementById("phoneInput").value)) {
         if (document.getElementById("signUp").classList.contains("disabled")) {
             document.getElementById("signUp").classList.remove("disabled");
         }
